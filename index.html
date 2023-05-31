@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Your To-Do App</h1>
+    <div class="content">
+        <div class="form-container">
+            <button class="btn" id="add-todo-button">Add New ToDo</button>
+            <div id="add-todo-form" style="display:none">
+                <form id="add-todo">
+                    <label for="Title">Title:</label>
+                    <input type="text" id="Title" name="Title" placeholder="Title" required>
+                    <label for="Description">Description:</label>
+                    <input type="text" id="Description" name="Description" placeholder="Description" required>
+                    <label for="DueDate">Due Date:</label>
+                    <input type="date" id="DueDate" name="DueDate" required>
+                    <label for="Notes">Notes:</label>
+                    <input type="text" placeholder="Notes" id="Notes" name="Notes" maxlength="40">
+                    <label for="Priority">Priority:</label>
+                    <select id="Priority" , name="Priority">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </form>
+                <br>
+                <div class="btn-container">
+                    <button type="submit" class="btn" id="submit-button">Submit ToDo</button>
+                    <button type="reset" class="btn" id="reset-button">Reset Form</button>
+                </div>
+            </div>
+        </div>
+        <div class="todo-container">
+            <h2>To-dos</h2>
+            <div class="projects">
+                <!-- here the projects will be displayed -->
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

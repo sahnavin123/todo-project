@@ -14,16 +14,19 @@
             <button class="btn" id="add-todo-button">Add New ToDo</button>
             <div id="add-todo-form" style="display:none">
                 <form id="add-todo">
-                    <label for="Title">Title:</label>
-                    <input type="text" id="Title" name="Title" placeholder="Title" required>
-                    <label for="Description">Description:</label>
-                    <input type="text" id="Description" name="Description" placeholder="Description" required>
-                    <label for="DueDate">Due Date:</label>
-                    <input type="date" id="DueDate" name="DueDate" required>
-                    <label for="Notes">Notes:</label>
-                    <input type="text" placeholder="Notes" id="Notes" name="Notes" maxlength="40">
-                    <label for="Priority">Priority:</label>
-                    <select id="Priority" , name="Priority">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" placeholder="Title" required />
+                    <p class="errorMsg" id="title-error"></p>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" placeholder="Description" required></textarea>
+                    <p class="errorMsg" id="description-error"></p>
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" name="dueDate" required />
+                    <p class="errorMsg" id="dueDate-error"></p>
+                    <label for="notes">Notes:</label>
+                    <input type="text" placeholder="Notes" id="notes" name="notes" maxlength="40" />
+                    <label for="priority">Priority:</label>
+                    <select id="priority" , name="priority">
                         <option value="Low">Low</option>
                         <option value="Medium">Medium</option>
                         <option value="High">High</option>
@@ -39,7 +42,7 @@
         <div class="todo-container">
             <h2>To-dos</h2>
             <div class="projects">
-                <!-- here the projects will be displayed -->
+                <!-- here the to do list item will be displayed -->
             </div>
         </div>
     </div>

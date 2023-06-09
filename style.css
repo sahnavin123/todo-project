@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(122, 194, 194);
+body {
+  background-color: rgb(122, 194, 194);
 }
 
 h1 {
@@ -16,6 +16,7 @@ h1 {
 }
 
 .btn {
+  margin-top: 1.5rem;
   cursor: pointer;
   background-color: rgb(65, 126, 241);
   border: none;
@@ -79,6 +80,21 @@ form input {
   gap: 0.2rem;
 }
 
+.errorMsg {
+  color: red;
+  font-size: small;
+  margin-top: -1rem;
+  margin-bottom: 0.2rem;
+}
+
+form #description {
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+  padding: 0.2rem 1rem;
+  outline: none;
+  border-radius: 0.8rem;
+}
+
 .content .todo-container {
   display: flex;
   flex-direction: column;
@@ -118,7 +134,7 @@ form input {
 }
 
 .projects #empty-todo-text {
-    width: 60vw;
+  width: 60vw;
   font-size: 1.5rem;
   font-weight: bold;
 }
